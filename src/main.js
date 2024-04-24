@@ -28,3 +28,14 @@ document.addEventListener('scroll', () => {
 
 
 // apply Hambuger Menu in Mobile site
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+})
+
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('open')
+})
+
+// about, skills, mywork, testimonial, contact
