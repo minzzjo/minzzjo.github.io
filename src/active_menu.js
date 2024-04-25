@@ -18,7 +18,7 @@ function observerCallback(entries) {
     const index = sectionIds.indexOf(`#${entry.target.id}`);
     visibleSections[index] = entry.isIntersecting;
     selectLastOne = index === sectionIds.length - 1
-      && entry.isIntersecting && entry.intersectionRatio >= 0.99;
+      && entry.isIntersecting && entry.intersectionRatio >= 0.95;
   });
 
   const navIndex = selectLastOne ? sectionIds.length - 1 : findFirstIntersecting(visibleSections);
