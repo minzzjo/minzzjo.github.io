@@ -146,12 +146,42 @@ button:focus {
 
 /* Home */
 #home {
+  position: relative;
 	background-color: var(--color-primary);
 	color: var(--color-text);
 	padding: 5rem 1rem;
 	padding-top: 7rem;
 	text-align: center;
   opacity: 1;
+}
+
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 768px) {
+    .home__divider svg {
+        width: calc(100% + 1.3px);
+        height: 75px;
+    }
 }
 
 .home__avatar {
@@ -254,8 +284,38 @@ button:focus {
 
 /* Skills */
 #skills {
+  position: relative;
 	background-color: var(--color-primary-variant);
 	color: var(--color-text);
+}
+
+.skils__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.skils__divider svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 50px;
+}
+
+.skils__divider .shape-fill {
+    fill: var(--color-primary);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .skils__divider svg {
+        width: calc(118% + 1.3px);
+        height: 75px;
+    }
 }
 
 .skills {
@@ -474,8 +534,37 @@ button:focus {
 
 /* Footer */
 #contact {
+  position: relative;
 	background-color: var(--color-primary);
 	color: var(--color-text);
+}
+
+.footer__divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.footer__divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .footer__divider svg {
+        width: calc(100% + 1.3px);
+        height: 75px;
+    }
 }
 
 .contact__links {
